@@ -1,0 +1,23 @@
+# Opcional: genera el proyecto de Xcode con XcodeGen (brew install xcodegen; xcodegen generate)
+name: DentaCarePro
+options:
+  bundleIdPrefix: mx.dentacare
+  deploymentTarget:
+    iOS: "17.0"
+targets:
+  DentaCarePro:
+    type: application
+    platform: iOS
+    sources:
+      - DentaCarePro
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: mx.dentacare.DentaCarePro
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: DentaCare Pro
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SWIFT_VERSION: "5.0"
